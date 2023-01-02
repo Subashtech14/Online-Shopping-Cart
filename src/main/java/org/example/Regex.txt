@@ -1,0 +1,31 @@
+ Agenda
+ What are Regular Expression?
+ What is java Regex?
+ Matcher Class
+ Pattern Class
+ Regex Character class
+ Regex Quantifiers
+ Regex MetaCharacters
+ 1> What are Regular Expression?
+    A Regular Expression is a sequence of characters that constructs a search pattern. When you search for data in a text. You can use this search pattern to
+    describe what you are looking for.
+    E.g: ^[a-z0-9_-]{3,15}$ ^ -> start of the line , $ -> End of the Line
+                |       |
+                         |
+                        3 to 15 characters long
+            letters, numbers, underscore, hyphens
+ 2> What is java REGEX?
+    The Java Regex is an API which is used to define a pattern for searching or manipulating Strings. It is widely used to define the constraint on Strings
+    such as password and email validation
+ 3> Matcher Class ?
+    Matcher Class is used to find the matches in a String.
+    Boolean matches()       -> Tests weather the given regular expression  fully matches or not
+    Boolean find()          -> Used to find the next expression that matches the pattern
+    Boolean find(int start) -> Searches the next expression form the given start number
+    String group()          -> Used to return the matched sequence
+    int start()             -> Returns the starting index
+    int end()               -> Returns the ending index
+    int groupCount()        -> Returns the total number of the matched sequence
+ 4> Pattern Class ?
+        Pattern Class is a compiled version of a regular Expression.
+      Static Pattern compile
